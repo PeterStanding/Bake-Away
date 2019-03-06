@@ -1,14 +1,37 @@
-nav li {
+
+nav ul {
   background: #ffffff;
-  margin: 0em;
-  padding: 1em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  padding: 14px 16px;
   display: inline-block;
-  border-style: solid;
+  border: hidden;
   border-width: thin;
+  float: left;
+}
+
+li a:hover {
+  background-color: #ffcccc;
+}
+
+.left {
+  float: left;
+  padding: 14px;
+  margin: 0em;
+}
+
+.current {
+  background-color: #ffcccc;
 }
 
 .logo {
   float: left;
   align: left;
-  width: 20vw;
+  width: 200px;
+  padding: 2em;
 }
