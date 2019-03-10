@@ -7,12 +7,25 @@ nav ul {
   overflow: hidden;
 }
 
+header {
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+
 nav li a {
-  padding: 14px 16px;
+  padding: 25px 60px;
   display: inline-block;
   border: hidden;
   border-width: thin;
   float: left;
+}
+
+article {
+  margin-top: -500px;
+  margin-left: -240px;
+  padding: 300px;
+
 }
 
 li a:hover {
@@ -22,7 +35,7 @@ li a:hover {
 .left {
   float: left;
   padding: 14px;
-  margin: 0em;
+  margin: 1em;
 }
 
 .current {
@@ -33,5 +46,11 @@ li a:hover {
   float: left;
   align: left;
   width: 200px;
-  padding: 2em;
+  padding: 3em;
+  margin-left: 20px;
+}
+
+.separate {
+  margin: 250px;
+  margin-left: -20px;
 }
