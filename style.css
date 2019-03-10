@@ -1,4 +1,6 @@
-
+* {
+  font-family: sans-serif;
+}
 nav ul {
   background: #ffffff;
   list-style-type: none;
@@ -45,6 +47,10 @@ article {
   margin-left: -240px;
   padding: 300px;
 
+}
+
+.category {
+  margin-top: -600px;
 }
 
 li a:hover {
