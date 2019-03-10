@@ -13,6 +13,25 @@ header {
   left: 150px;
 }
 
+section {
+  margin-top: -200px;
+  margin-left: 600px;
+  background-color: #e0ebeb;
+  display: inline-block;
+  padding: 1em;
+}
+
+.guest {
+  margin-top: 4px;
+  margin-left: 110px;
+}
+
+.or {
+  background-color: white;
+  margin-left: 75px;
+
+}
+
 nav li a {
   padding: 25px 60px;
   display: inline-block;
