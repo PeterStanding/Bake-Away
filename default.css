@@ -9,10 +9,6 @@ body{
     width: 20%;
 }
 
-.search {
-   display: block;
-   padding: 15px 15px;
-}
 
 nav {
     font-family: sans-serif;
@@ -76,6 +72,11 @@ nav ul li a:hover{
     color: #fff;
 }
 
+.search{
+  display: block;
+  padding: 15px 15px;
+  margin: 15px 15px;
+}
 
 
 
