@@ -9,6 +9,10 @@ body{
     width: 20%;
 }
 
+.search {
+   display: block;
+   padding: 15px 15px;
+}
 
 nav {
     font-family: sans-serif;
