@@ -10,3 +10,17 @@ Steps for Uploading and Downloading Repository from GitHub
 2. Make sure that the changed code run correctly on personal machine before reuploading to the Github repository
 3. If upload causes bugs or compromises the integrity of the repostory - Fix own code as soon as possible - Then reupload to the repository
 4. Notify group once upload is completed
+
+
+
+
+------
+TO DO: 
+------
+SQL populated with dummy data
+Server coding 
+Connect database to html 
+Finish html 
+test cases 
+Documentation on code (Mario) 
+Video Demo 
