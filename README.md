@@ -17,11 +17,11 @@ Steps for Uploading and Downloading Repository from GitHub
 ------
 TO DO: 
 ------
-1.SQL populated with dummy data
-2.Server coding 
-3.Connect database to html 
-4.Finish html 
-5.Test cases 
-6.Documentation on code (Mario) 
-7.Video Demo 
-8.Documentation on SQL 
+1. SQL populated with dummy data
+2. Server coding 
+3. Connect database to html 
+4. Finish html 
+5. Test cases 
+6. Documentation on code (Mario) 
+7. Video Demo 
+8. Documentation on SQL 
