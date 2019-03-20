@@ -1,16 +1,27 @@
 body{
-  height: 100%;
+    height: 100%;
+    font-family: sans-serif;
+
 }
 
+/*Logo styling*/
 .logo {
-  display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
 }
 
+/*map mobile styling*/
+iframe {
+  position: relative;
+  padding-top: 20px;
+  width: 50%;
+  height: 300px;
+  left: 25%;
+}
 
-
+/*Navigation styling*/
 nav {
     font-family: sans-serif;
     z-index: 1;
@@ -48,21 +59,19 @@ nav input:checked + ul {
     display: block;
 }
 
-nav ul li a,
-.nav-4{
+nav ul li a{
+    color: #000;
+    background: #fff;
     display: block;
     padding: 15px 15px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-nav ul ul li a {
-    color: #000;
-    background: #f1f1f1;
-    border-bottom: 0.5px solid #a8a8a8;
-    display: block;
-    padding: 15px 15px;
-    text-decoration: none;
+nav ul li{
+    background: #fff;
 }
+
 
 nav ul li a:hover,
 label:hover{
@@ -73,19 +82,106 @@ nav ul li a:hover{
     color: #fff;
 }
 
+/*search bar styling *margin and padding for mobile*/
 .search{
-  display: block;
-  padding: 15px 15px;
-  margin: 15px 15px;
+    display: block;
+    padding: 15px 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #fff;
+}
+
+
+/*Log in form styling*/
+.loginbox{
+    width: 80%;
+    height: 410px;
+    background: #000;
+    color: #fff;
+    top: 71.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    z-index: -1;
+
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+input[type=checkbox] + .confectionary {
+ .type visibility:
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #fff;;
+    color: black;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #fff;;
 }
 
 
 
 
-
-
-
-@media (min-width : 920px) {
+/*Responsive desktop styling*/
+@media (min-width : 850px) {
     nav label {
         display: none;
     }
@@ -111,6 +207,16 @@ nav ul li a:hover{
         margin-top: 5%;
     }
 
+/*map desktop styling*/
+    iframe {
+      position: absolute;
+      width: 40%;
+      height: 400px;
+      left: 55%;
+      top: 30%
+    }
+
+/*desktop logo styling*/
     .logo {
       float: left;
       align: left;
@@ -118,28 +224,20 @@ nav ul li a:hover{
       margin-left: 7%;
     }
 
-    .menu {
-      display: block;
-      margin-left: 10em;
-        margin-right: auto;
-        width: 10%;
+/*desktop login form postion and size*/
+    .loginbox{
+        width: 40%;
+        top: 62%;
     }
 
-    .categories {
-      display: block;
-        margin-left: 10em;
-        margin-right: auto;
-        width: 10%;
+/*search bar margin for desktop*/
+    .search{
+      margin: 15px 15px;
     }
 
-    .logon {
-        margin-left: 20em;
-        margin-right: auto;
-        background-color: red;
-    }
 
-    .test {
-    }
+
+
 
 
 

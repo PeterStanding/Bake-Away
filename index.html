@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
-    <link rel="icon" type="image/gif" href="bakeawayLogo.png" sizes="16x16">
     <title>BakeAway</title>
+    <link rel="shortcut icon" href="bakeawayLogo2.png" />
 </head>
 <body>
 
@@ -24,20 +24,57 @@
 
       </ul>
   </nav>
- 
-  <section class="menu">
+
+
+  <section>
     <h3><b>Menus</b></h3>
-    <p>Confectionery <input type="radio" name="type" value="confectionery"></p>
-    <p>Bread <input type="radio" name="type" value="bread"></p>
-    <p>Savoury <input type="radio" name="type" value="savoury"></p>
+    <p>Confectionery <input type="radio" name="type" value="Confectionery" class="confectionary"></p>
+    <p>Bread <input type="radio" name="type" value="Bread"></p>
+    <p>Savoury <input type="radio" name="type" value="Savoury"></p>
   </section>
-  <section class="categories">
+
+  <section class = "category">
     <h3><b>Categories</b></h3>
-    <p>Muffins <input type="checkbox" name="categories" value="muffins"></p>
-    <p>Doughnuts <input type="checkbox" name="categories" value="doughnuts"></p>
-    <p>Croissant <input type="checkbox" name="categories" value="croissant"></p>
-    <p>Swissbun <input type="checkbox" name="categories" value="swissbun"></p>
-    <p>Cake <input type="checkbox" name="categories" value="cake"></p>
+    <p>Muffins <input type="radio" name="categories" value="Muffins"></p>
+    <p>Doughnuts <input type="radio" name="categories" value="Doughnuts"></p>
+    <p>Croissant <input type="radio" name="categories" value="Croissant"></p>
+    <p>Swiss Bun <input type="radio" name="categories" value="Swissbun"></p>
+    <p>Cake <input type="radio" name="categories" value="Cake"></p>
   </section>
+
+
+
+  <select name="Categories">
+  <optgroup label="All Categories">
+    <option>View All</option>
+  </optgroup>
+
+  <optgroup label="Confectionary">
+    <option>Doughnuts</option>
+    <option>Muffins</option>
+    <option>Croissants</option>
+    <option>Swiss Buns</option>
+    <option>Cakes</option>
+    <option>Pies</option>
+  </optgroup>
+
+  <optgroup label="Bread">
+    <option>Baps</option>
+    <option>Rolls</option>
+    <option>French Stick</option>
+    <option>Loafs</option>
+  </optgroup>
+
+  <optgroup label="Savoury">
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+  </optgroup>
+
+</select>
+
 </body>
 </html>
