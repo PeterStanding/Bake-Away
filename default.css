@@ -23,7 +23,6 @@ iframe {
 
 /*Navigation styling*/
 nav {
-    font-family: sans-serif;
     z-index: 1;
     width: 100%;
     border-top: 2px solid;
@@ -91,12 +90,39 @@ nav ul li a:hover{
     background: #fff;
 }
 
+/*Bakeries Side Bar Styling*/ 
+
+.bakeries{
+    width: 80%;
+    height: 410px;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/*Help contadt details Styling*/
+
+.contacts{
+    width: 30%;
+    height: 410px;
+    top: 60%;
+    left: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    padding: 30px;
+    box-sizing: border-box;
+}
 
 /*Log in form styling*/
 .loginbox{
     width: 80%;
     height: 410px;
-    background: #000;
+    background: #454545;
     color: #fff;
     top: 71.5%;
     left: 50%;
