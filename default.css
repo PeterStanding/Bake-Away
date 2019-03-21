@@ -1,7 +1,6 @@
 body{
     height: 100%;
     font-family: sans-serif;
-
 }
 
 /*Logo styling*/
@@ -91,7 +90,6 @@ nav ul li a:hover{
 }
 
 /*Bakeries Side Bar Styling*/ 
-
 .bakeries{
     width: 80%;
     height: 410px;
@@ -105,7 +103,6 @@ nav ul li a:hover{
 }
 
 /*Help contadt details Styling*/
-
 .contacts{
     width: 30%;
     height: 410px;
@@ -124,14 +121,13 @@ nav ul li a:hover{
     height: 410px;
     background: #454545;
     color: #fff;
-    top: 71.5%;
+    top: 65%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
     z-index: -1;
-
 }
 
 .avatar{
@@ -185,12 +181,14 @@ input[type=checkbox] + .confectionary {
     font-size: 18px;
     border-radius: 20px;
 }
+
 .loginbox input[type="submit"]:hover
 {
     cursor: pointer;
     background: #fff;;
     color: black;
 }
+
 .loginbox a{
     text-decoration: none;
     font-size: 12px;
@@ -198,13 +196,95 @@ input[type=checkbox] + .confectionary {
     color: darkgrey;
 }
 
-.loginbox a:hover
-{
-    color: #fff;;
+.loginbox a:hover{
+    color: #fff;
 }
 
+/*Register Page*/
 
+.registerbox{
+    width: 80%;
+    height: 550px;
+    background: #454545;
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    z-index: -1;
+}
 
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+input[type=checkbox] + .confectionary {
+ .type visibility:
+}
+
+.registerbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.registerbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registerbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.registerbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.registerbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #fff;;
+    color: black;
+}
+
+.registerbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.registerbox a:hover{
+    color: #fff;
+}
 
 /*Responsive desktop styling*/
 @media (min-width : 850px) {
@@ -260,11 +340,3 @@ input[type=checkbox] + .confectionary {
     .search{
       margin: 15px 15px;
     }
-
-
-
-
-
-
-
-}
