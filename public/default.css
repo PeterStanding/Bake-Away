@@ -103,132 +103,29 @@ nav ul li a:hover{
     box-sizing: border-box;
 }
 
-/*Help contact details Styling*/
-
-
-.FAQs {
-  width: 50%;
-  height: 410px;
-  top: 70%;
-  left: 56%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-  padding: 30px;
-}
-/* styling for the headings*/
-h1
-{ text-align: center;
-  width: 613px;
-  padding: 0;
-  top: 30%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-  padding: 30px;
-}
-
-h5
-{ margin: 0;
-  padding: 0 0 5px 0;
-  font: normal 120% arial, sans-serif;
-  font-weight: bold;
-  color: #000000;
-}
-
-h2, h3, h4
-{ margin: 0;
-  padding: 0 0 5px 0;
-  font: normal 120% arial, sans-serif;
-  color: #000000;
-  font-weight: bold;
-}
-
-.p1,.p2,.p3,.p4,.p5,.p6,.p7
-{ margin: 0;
-  padding: 0 0 5px 0;
-  font: italic 120% arial, sans-serif;
-}
-
-p
-{
-  text-align:justify;
+/*Help faq styling mobile*/
+.faq {
+  position: relative;
+  padding: 10px;
+  width: 80%;
+  height: 440px;
+  left: 8%;
+  border: 1px solid;
+  text-align: center;
+  overflow: auto;
+  color: #fff;
+  background-color: #454545;
 
 }
 
-#site_content
-{ width: 858px;
-  overflow: hidden;
-  margin: 0 auto 0 auto;
-  padding: 10px 20px 20px 20px;
-}
 
-  .sidebar
-{ float: right;
-  width: 260px;
-  padding: 0 15px 20px 15px;
-  top: 125%;
-  left: 93%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-}
-
-
-
-.form_settings
-{ margin: 15px 0 0 0;}
-
-.form_settings p
-{ padding: 0 0 4px 0;}
-
-.form_settings span
-{ float: left;
-  width: 200px;
-  text-align: left;}
-
-.form_settings input, .form_settings textarea
-{ padding: 5px;
-  width: 299px;
-  font: 100% arial;
-  border: 1px solid #E5E5DB;
-  background: #FFF;
-  color: #47433F;}
-
-.form_settings .submit
-{ font: 100% arial;
-  border: 0;
-  width: 99px;
-  margin: 0 0 0 212px;
-  height: 33px;
-  padding: 2px 0 3px 0;
-  cursor: pointer;
-  background: #3B3B3B;
-  color: #FFF;}
-
-.form_settings textarea, .form_settings select
-{ font: 100% arial;
-  width: 299px;}
-
-.form_settings select
-{ width: 310px;}
-
-.form_settings .checkbox
-{ margin: 4px 0;
-  padding: 0;
-  width: 14px;
-  border: 0;
-  background: none;
-}
-
-/*Log in form styling*/
+/*Log in form styling - mobile*/
 .loginbox{
     width: 80%;
     height: 410px;
     background: #454545;
     color: #fff;
-    top: 65%;
+    top: 70%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -237,6 +134,7 @@ p
     z-index: -1;
 }
 
+/*Login and register form*/
 .avatar{
     width: 100px;
     height: 100px;
@@ -246,6 +144,7 @@ p
     left: calc(50% - 50px);
 }
 
+/*Login and register form*/
 h1{
     margin: 0;
     padding: 0 0 20px;
@@ -307,14 +206,14 @@ input[type=checkbox] + .confectionary {
     color: #fff;
 }
 
-/*Register Page*/
+/*Register form styling - mobile*/
 
 .registerbox{
     width: 80%;
     height: 550px;
     background: #454545;
     color: #fff;
-    top: 65%;
+    top: 80%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -425,8 +324,8 @@ input[type=checkbox] + .confectionary {
       position: absolute;
       width: 40%;
       height: 400px;
-      left: 55%;
-      top: 30%
+      left: 58%;
+      top: 33%
     }
 
 /*desktop logo styling*/
@@ -443,7 +342,29 @@ input[type=checkbox] + .confectionary {
         top: 62%;
     }
 
+/*desktop register form postion and size*/
+    .registerbox{
+        width: 40%;
+        top: 67%;
+    }
+
 /*search bar margin for desktop*/
     .search{
       margin: 15px 15px;
+    }
+
+/*Help faq styling desktop*/
+    .faq {
+      width: 45%;
+      height: 440px;
+      top: 32%;
+      left: 8%;
+      position: absolute;
+      border: 1px solid;
+      text-align: center;
+      padding: 10px;
+      overflow: auto;
+
+
+
     }
