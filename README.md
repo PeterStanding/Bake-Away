@@ -3,6 +3,8 @@ INSE Coursework 2018/2019
 
 BakeAway is an online  application that customers can use to order baked products to be delivered to their door from the bakery. Users will be able to save payment details once an account is created, however they may use the appication under a guest profile. Similar products that are on the market currently are Deliveroo and Uber Eats.
 
+Company Email - bakeawayinquiries@gmail.com
+
 ------------
 Team Members
 ------------
