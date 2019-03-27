@@ -31,7 +31,7 @@ Installing our application
 1. To run the server part of the application, you need to use node.js
 2. Please install node and gitbash if you don't already have it
 3. Go on the master file, right click and run with gitbash
-4. On the gitbash screen, type "npm install" to install all of the packages used
+4. On the gitbash screen, type "npm install" and "npm install mysql2" to install all of the packages used
 5. Then type "npm start" to start the server
 6. Now go to your preferred web browser (Chrome is preferred) and type "localhost:8080/index.html"
 
