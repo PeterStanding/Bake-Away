@@ -4,7 +4,7 @@ const express = require("express")
 const app = express()
 const port = 8080;
 const mysql = require('mysql')
-
+const config = require('./config.js')
 const con = mysql.createConnection(config.mysql)
 
 app.use(express.static("public"))
