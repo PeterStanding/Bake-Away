@@ -3,10 +3,13 @@
 const express = require("express")
 const app = express()
 const port = 8080;
+const mysql = require('mysql')
+
+const con = mysql.createConnection(config.mysql)
 
 app.use(express.static("public"))
 
-app.get('/index.html', function (req, res) {
+app.get('/', function (req, res) {
    res.sendFile( __dirname + "/" + "index.html" )
 })
 
