@@ -3,8 +3,6 @@ INSE Coursework 2018/2019
 
 BakeAway is an online  application that customers can use to order baked products to be delivered to their door from the bakery. Users will be able to save payment details once an account is created, however they may use the appication under a guest profile. Similar products that are on the market currently are Deliveroo and Uber Eats.
 
-Company Email - bakeawayinquiries@gmail.com
-
 ------------
 Team Members
 ------------
@@ -31,7 +29,7 @@ Installing our application
 1. To run the server part of the application, you need to use node.js
 2. Please install node and gitbash if you don't already have it
 3. Go on the master file, right click and run with gitbash
-4. On the gitbash screen, type "npm install" and "npm install mysql2" to install all of the packages used
+4. On the gitbash screen, type "npm install" to install all of the packages used
 5. Then type "npm start" to start the server
 6. Now go to your preferred web browser (Chrome is preferred) and type "localhost:8080/index.html"
 

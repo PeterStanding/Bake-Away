@@ -12,14 +12,28 @@ body{
     width: 20%;
 }
 
-/*map mobile styling*/
-iframe {
-  position: relative;
-  padding-top: 20px;
-  width: 50%;
-  height: 300px;
-  left: 25%;
+/*Bakery grid parent*/
+.parent {
+  position: absolute;
+  /* inline-block hack */
+  font-size: 0;
+  text-align: center;
+  top: 35%;
+  z-index: -99;
 }
+/*Bakery grid child*/
+.child {
+	width: 250px;
+  height: 300px;
+  margin: 0 10px 10px;
+	background: grey;
+  /* inline-block hack */
+  display: inline-block;
+  font-size: medium;
+  text-align: centre;
+}
+
+
 
 /*Navigation styling*/
 nav {
@@ -90,17 +104,14 @@ nav ul li a:hover{
     background: #fff;
 }
 
-/*Bakeries Side Bar Styling*/
-.bakeries{
-    width: 80%;
-    height: 410px;
-    top: 60%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    padding: 30px;
-    box-sizing: border-box;
+
+/*map mobile styling*/
+iframe {
+  position: relative;
+  padding-top: 20px;
+  width: 50%;
+  height: 300px;
+  left: 25%;
 }
 
 /*Help faq styling mobile*/
@@ -115,7 +126,6 @@ nav ul li a:hover{
   overflow: auto;
   color: #fff;
   background-color: #454545;
-
 }
 
 
@@ -364,7 +374,6 @@ input[type=checkbox] + .confectionary {
       text-align: center;
       padding: 10px;
       overflow: auto;
-
-
-
     }
+
+  }

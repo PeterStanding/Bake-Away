@@ -29,6 +29,13 @@ Product_ID int,
 FOREIGN KEY (Product_ID) REFERENCES Menu_Items(Product_ID)
 );
 
+CREATE TABLE Order_Line (
+OrderLine_ID int primary key,
+OrderLine_Date DATE,
+Customer_ID int,
+FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID)
+);
+
 CREATE TABLE Customer(
 Customer_ID int primary key,
 Customer_Title VARCHAR(20),
@@ -42,13 +49,6 @@ Customer_County VARCHAR(20),
 Customer_Telephone_Num CHAR(11),
 Customer_Moblie_Num CHAR(11),
 Customer_Email VARCHAR(40)
-);
-
-CREATE TABLE Order_Line (
-OrderLine_ID int primary key,
-OrderLine_Date DATE,
-Customer_ID int,
-FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID)
 );
 
 CREATE TABLE Payment (
