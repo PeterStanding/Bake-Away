@@ -6,14 +6,14 @@ BakeAway is an online  application that customers can use to order baked product
 ------------
 Team Members
 ------------
-GitHub UserName   -- UoP Student Number   -- Student Name
-1. PeterStanding  -- UP817277             -- Peter Standing
-2. Chrisjnovell   -- UP850874             -- Chris Novell
-3. up857315       -- UP857315             -- Mario Dryas
-4. UP879389       -- UP879389             -- Jamila Mboob
-5. up866467       -- UP866467             -- Charles Wray
-6. D3BZ           -- UP841221             -- Deborah Kipilimba
-7. KsKhoo         -- UP909308             -- Kah Suin Khoo
+GitHub UserName   -- UoP Student Number  
+1. PeterStanding  -- UP817277            
+2. Chrisjnovell   -- UP850874            
+3. up857315       -- UP857315            
+4. UP879389       -- UP879389             
+5. up866467       -- UP866467            
+6. D3BZ           -- UP841221            
+7. KsKhoo         -- UP909308             
 
 ----------------------------------------------------------
 Steps for Uploading and Downloading Repository from GitHub
