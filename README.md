@@ -38,11 +38,10 @@ Installing our application
 ------
 TO DO: 
 ------
-1. SQL populated with dummy data
-2. Server coding 
-3. Connect database to html 
-4. Finish html 
-5. Test cases 
-6. Documentation on code (Mario) 
-7. Video Demo 
-8. Documentation on SQL 
+1. Server coding 
+2. Connect database to html 
+3. Finish html 
+4. Test cases 
+5. Documentation on code (Mario) 
+6. Video Demo 
+7. Documentation on SQL 
