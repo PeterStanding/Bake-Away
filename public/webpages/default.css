@@ -30,7 +30,7 @@ body{
   /* inline-block hack */
   display: inline-block;
   font-size: medium;
-  text-align: centre;
+  text-align: center;
 }
 
 
@@ -375,5 +375,4 @@ input[type=checkbox] + .confectionary {
       padding: 10px;
       overflow: auto;
     }
-
-  }
+}

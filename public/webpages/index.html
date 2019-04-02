@@ -6,17 +6,32 @@
     <link rel="stylesheet" href="default.css">
     <title>BakeAway</title>
     <link rel="shortcut icon" href="bakeawayLogo2.png" />
+    <script>
+    function searchBakery() {
+      var input = document.getElementById('myinput');
+      var filter = input.value.toLowerCase();
+      var nodes = document.getElementsByClassName('child');
+
+      for (i=0; i< nodes.length; i++){
+        if (nodes[i].innerText.toLowerCase().includes(filter)) {
+          nodes[i].style.display = "";
+        } else {
+          nodes[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 
-  <img src="bakeawayLogo.png" class="logo" alt="Bake-Away Logo">
+  <img src="bakeawayLogo.png" class="logo" alt="Bake-Away Logo" onkeyup="searchItem()">
 
   <nav>
       <label for="toggle_1" aria-label="Close" > &#9776;</label>
       <input type="checkbox" id="toggle_1">
 
       <ul>
-          <li><input type="text" placeholder="Search" class="search"></li>
+          <li><input type="text" id="myinput" onkeyup="searchBakery()" placeholder="Search" class="search"></li>
           <li><a href="index.html"     title="Home" accesskey="i">               Bakeries</a></li>
           <li><a href="basket.html"    title="Basket" accesskey="b">               Basket</a></li>
           <li><a href="login.html"    title="Login / Register" accesskey="l">              Login / Register</a></li>
@@ -70,34 +85,45 @@
     </optgroup>
 </select>
 
-
 <div class="parent">
   <div class="child">
-     Bakery 1
+     Greggs
   </div>
 
   <div class="child">
-     Bakery 2
+     Bread Addiction
   </div>
 
   <div class="child">
-    Bakery 3
+    Patisserie Valerie
   </div>
 
   <div class="child">
-    Bakery 4
+    Sweet Cakes
   </div>
 
   <div class="child">
-    Bakery 5
+    Capital Cake
  </div>
 
   <div class="child">
-    Bakery 6
+    Cupcake Treasure
  </div>
 
   <div class="child">
-    Bakery 7
+    Fondantly Yours
+  </div>
+
+  <div class="child">
+    Cakes O'Licious
+  </div>
+
+  <div class="child">
+    Commercial Bakery
+  </div>
+
+  <div class="child">
+    Heidi's Patisserie
   </div>
 </div>
 
