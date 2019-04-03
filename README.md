@@ -39,9 +39,7 @@ Installing our application
 TO DO: 
 ------
 1. Server coding 
-2. Connect database to html 
-3. Finish html 
-4. Test cases 
-5. Documentation on code (Mario) 
-6. Video Demo 
-7. Documentation on SQL 
+2. Finish html 
+3. Test cases 
+4. Documentation on code (Mario) 
+5. Video Demo 
