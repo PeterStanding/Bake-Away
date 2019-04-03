@@ -1,5 +1,7 @@
--- INSERT STATEMENTS FOR BAKERY TABLE --
-INSERT INTO Bakery Values ("138691", "Greggs", "78 Queen Road", "Portsmouth", "PO1 4RT", "Hampshire", "08202020","greggs@gmail.com");
+-- 
+Inserts values into the Bakery Table.
+--
+INSERT INTO Bakery VALUES ("138691", "Greggs", "78 Queen Road", "Portsmouth", "PO1 4RT", "Hampshire", "08202020","greggs@gmail.com");
 INSERT INTO Bakery VALUES ("522670", "Bread Addiction", "54 Elm Grove", "Portsmouth", "PO5 1JG", "Hampshire", "0767829", "breadadd@gmail.com"); 
 INSERT INTO Bakery VALUES ("167608", "Patisserie Valerie", "The tramshed", "Portsmouth", "PO1 3TA", "Hampshire", "02392291168", "patisser
 ievalerie@gmail.com");
@@ -11,7 +13,9 @@ INSERT INTO Bakery VALUES ("975234", "Cakes O'Licious", "9 Holbeach rd", "Portsm
 INSERT INTO Bakery VALUES ("352182", "Commercial Bakery", "1100 Blueprint", "Portsmouth", "PO3 5RW", "Hampshire", "02391", "commercial@gmail.com"); 
 INSERT INTO Bakery VALUES ("245386", "Heidi's Patisserie", "256 Havant rd", "Portsmouth", "PO6 1PA", "Hampshire", "02395", "heidicakes@gmail.com"); 
 
--- INSERT STATEMENTS FOR Menu_Items Table --
+-- 
+Inserts values into the Menu_Items table
+--
 INSERT INTO Menu_Items VALUES ("1562", "YumYum", "A sweet doughnut twist", "0.45", "138691"); 
 INSERT INTO Menu_Items VALUES ("2635", "Chocolate Cake", "Belgian chocolate", "9.98", "522670"); 
 INSERT INTO Menu_Items VALUES ("3625", "Apple pie", "Pie with apple", "2.36", "167608"); 
@@ -23,8 +27,9 @@ INSERT INTO Menu_Items VALUES ("3826", "Muffin", "Chocolate or blueberry muffin"
 INSERT INTO Menu_Items VALUES ("7652", "Ginger bread man", "Ginger flavoured biscuit", "0.99", "352182");
 INSERT INTO Menu_Items VALUES ("6291", "Belgian bun", "Cake with raisins", "1.10", "245386");
 
-
--- INSERT STATEMENTS FOR Customer Table -- 
+-- 
+Inserts values into the Customer table.
+-- 
 INSERT INTO Customer VALUES ("90397","Mr","Lev","Hughes","1978-07-10","31 Mollis St.","Durham","FZ04 0PW","DU","056234845","01697898","justo@enimMauris.ca");
 INSERT INTO Customer VALUES ("30371","Mr","Chandler","Frank","1972-06-27","3251 Vitae Avenue","Marlborough","N95 0NR","WI","08001111","052264967","blandit@etmagnis.ca");
 INSERT INTO Customer VALUES ("51575","Mr","Amir","Delaney","1998-09-17","792 Amet Road","Beverley","M47 5SF","YK","01978373","053213072","vehicula@metusfacilisislorem.co.uk");
@@ -36,7 +41,9 @@ INSERT INTO Customer VALUES ("63755","Mrs","Yardley","Nixon","2002-04-29","5048 
 INSERT INTO Customer VALUES ("66698","Mr","Unity","Tanner","1995-06-02","961 Cras Rd.","Lochgilphead","ZI09 1XN","AR","011042778","079039134","risus.at.fringilla@at.com");
 INSERT INTO Customer VALUES ("42943","Miss","Laurel","Rutledge","1983-07-07","9495 Non Rd.","York","BP5 8QC","Yorkshire","075201209","0844645","dolor.dapibus@velarcueu.ca");
 
--- INSERT STATEMENTS FOR EMPLOYEE TABLE --
+-- 
+Inserts values into the Employee table. 
+--
 INSERT INTO Employee VALUES ("28833","Molly","Mortimer","71 Nostra, St.","C5W 8HH","05003314235");
 INSERT INTO Employee VALUES ("36816","Reagan","Emerson","78 Varius Ave","K89 4TE","07463673527");
 INSERT INTO Employee VALUES ("31172","Laura","Ross","48 Suspendisse Avenue","U13 7GJ","05559373426");
@@ -48,7 +55,9 @@ INSERT INTO Employee VALUES ("42053","Ashton","Cash","72 Ultrices Rd.","EO9 1TF"
 INSERT INTO Employee VALUES ("93896","Cameron","Wood","96 Vulputate, Rd.","C01 2GW","07622358594");
 INSERT INTO Employee VALUES ("41233","Jemima","Morgan","65 Porttitor Street","JN9 9WH","05553152378");
 
--- INSERT STATEMENTS FOR LOGIN TABLE --
+-- 
+Inserts values into the Login table. 
+--
 INSERT INTO Login VALUES ("879389","H5llo2w","90397");
 INSERT INTO Login VALUES ("866467","qwERTY3","30371");
 INSERT INTO Login VALUES ("850874","IGbsdg8","51575");
@@ -60,7 +69,9 @@ INSERT INTO Login VALUES ("874567","K1hdn22","63755");
 INSERT INTO Login VALUES ("872039","UYSBn23","66698");
 INSERT INTO Login VALUES ("839730","12sf4Js","42943");
 
--- INSERT STATEMENTS FOR Order_Details TABLE-
+-- 
+Inserts values into the Order_Details table 
+--
 INSERT INTO Order_Details VALUES ("1", "12.00", "26", "10", "1562"); 
 INSERT INTO Order_Details VALUES ("2", "3.00", "3", "0", "3826"); 
 INSERT INTO Order_Details VALUES ("3", "6.00", "5", "20", "1752"); 
@@ -72,7 +83,9 @@ INSERT INTO Order_Details VALUES ("8", "2.50", "2", "5", "8734");
 INSERT INTO Order_Details VALUES ("9", "1.10", "8", "0", "6291");
 INSERT INTO Order_Details VALUES ("10", "7.00", "2", "5", "5243");
 
--- INSERT STATEMENTS FOR ORDER_LINE TABLE --
+-- 
+Inserts values into the Order_Line table.
+--
 INSERT INTO Order_Line VALUES ("111","2019-02-18","90397");
 INSERT INTO Order_Line VALUES ("112","2019-03-02","30371");
 INSERT INTO Order_Line VALUES ("113","2019-01-29","51575");
@@ -84,7 +97,9 @@ INSERT INTO Order_Line VALUES ("118","2018-01-23","63755");
 INSERT INTO Order_Line VALUES ("120","2018-10-07","66698");
 INSERT INTO Order_Line VALUES ("119","2019-05-12","66698");
 
--- INSERT STATEMENTS FOR PAYMENT TABLE --
+-- 
+Inserts values into the Payment table.
+--
 INSERT INTO Payment VALUES ("201","12.00","26","Card","90397","1");
 INSERT INTO Payment VALUES ("202","3.00","3","Card","30371","2");
 INSERT INTO Payment VALUES ("203","6.00","5","Cash","51575","3");
