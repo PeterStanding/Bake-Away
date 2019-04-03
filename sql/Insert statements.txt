@@ -3,8 +3,7 @@ Inserts values into the Bakery Table.
 --
 INSERT INTO Bakery VALUES ("138691", "Greggs", "78 Queen Road", "Portsmouth", "PO1 4RT", "Hampshire", "08202020","greggs@gmail.com");
 INSERT INTO Bakery VALUES ("522670", "Bread Addiction", "54 Elm Grove", "Portsmouth", "PO5 1JG", "Hampshire", "0767829", "breadadd@gmail.com"); 
-INSERT INTO Bakery VALUES ("167608", "Patisserie Valerie", "The tramshed", "Portsmouth", "PO1 3TA", "Hampshire", "02392291168", "patisser
-ievalerie@gmail.com");
+INSERT INTO Bakery VALUES ("167608", "Patisserie Valerie", "The tramshed", "Portsmouth", "PO1 3TA", "Hampshire", "02392291168", "patisserievalerie@gmail.com");
 INSERT INTO Bakery VALUES ("653782", "Sweet Cakes", "70 Palmerston rd", "Portsmouth", "PO5 3PT", "Hampshire", "07840", "sweetc@gmail.com"); 
 INSERT INTO Bakery VALUES ("146823", "Capital Cake", "283 Kingston rd", "Portsmouth", "PO2 7LR", "Hampshire", "02392", "capital@gmail.com"); 
 INSERT INTO Bakery VALUES ("487197", "Cupcake Treasure", "49 Farlington rd", "Portsmouth", "PO2 0DS", "Hampshire", "02393", "cupcake@gmail.com"); 
