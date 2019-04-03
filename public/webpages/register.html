@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="default.css">
     <title>BakeAway</title>
     <link rel="shortcut icon" href="bakeawayLogo2.png" />
+    <script src="./queries.js"></script>
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 
 
   <nav>
-      <label for="toggle_1" aria-label="Close" > &#9776;</label>
+      <label for="toggle_1" aria-label="Close"> &#9776;</label>
       <input type="checkbox" id="toggle_1">
 
       <ul>
@@ -31,14 +32,14 @@
       <h1>Register Here</h1>
       <form>
           <p>Username</p>
-          <input type="text" name="" placeholder="Enter Username">
+          <input type="text" name="" id="newUser"placeholder="Enter Username">
           <p>Email</p>
-          <input type="text" name="" placeholder="Enter Email">
+          <input type="text" name="" id="newEmail" placeholder="Enter Email">
           <p>Password</p>
-          <input type="password" name="" placeholder="Enter Password">
+          <input type="password" name="" id="newPass" placeholder="Enter Password">
           <p>Retype Password</p>
-          <input type="password" name="" placeholder="Renter Password">
-          <input type="submit" name="" value="Login">
+          <input type="password" name="" id="renter" placeholder="Renter Password">
+          <input type="submit" name="" onclick = "newRecord()" value="Login">
           <a href="#">Lost your password?</a><br>
           <a href="#">Don't have an account?</a>
       </form>

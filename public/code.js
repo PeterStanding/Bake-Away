@@ -10,8 +10,12 @@ const db = mysql.createConnection(config.mysql)
 app.use(express.static("images"))
 app.use(express.static("webpages"))
 
+// For the Login Function
 app.get('/login', loginRequest)
 app.get('/password', passwordRequest)
+
+// For the Registation Page Functions
+app.get('/newRecord', insertRecord)
 
 app.listen(port, () => console.log("server is listening"))
 
@@ -20,6 +24,7 @@ db.connect(function(err) {
   console.log("Database Connected")
 });
 
+//Login in Function Queries
 async function loginRequest(req,res) {
   db.query('SELECT * FROM Login', function(err, row, fields) {
     let usernames = [];
@@ -41,7 +46,14 @@ async function passwordRequest(req,res) {
         passwords.push(row[i].Password);
       //console.log(row[i].Password);
     }
-    console.log(passwords)
+    //console.log(passwords)
     res.send(passwords)
+  })
+}
+
+//Query for creating a new Database Record
+async function insertRecord() {
+  db.query('INSERT INTO LOGIN VALUES' , function(err) {
+    if (err) throw err;
   })
 }
