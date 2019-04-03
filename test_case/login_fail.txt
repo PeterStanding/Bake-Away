@@ -6,6 +6,7 @@
 >>>>write("password", into("Enter Password"));
 >>>>click("Log In");
 >>>>Look up error
+>>> write("Username", into("Enter Username"));
 >>>>write("123password", into("Renter Password"));
 >>>>click("Log In");
 >>> kill_browser()
