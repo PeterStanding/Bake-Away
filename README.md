@@ -23,6 +23,16 @@ Steps for Uploading and Downloading Repository from GitHub
 3. If upload causes bugs or compromises the integrity of the repostory - Fix own code as soon as possible - Then reupload to the repository
 4. Notify group once upload is completed
 
+
+---------------------------
+Steps for running the database 
+---------------------------
+
+
+
+
+
+
 --------------------------
 Installing our application
 --------------------------
@@ -39,9 +49,7 @@ Installing our application
 TO DO: 
 ------
 1. Server coding 
-2. Connect database to html 
-3. Finish html 
-4. Test cases 
-5. Documentation on code (Mario) 
-6. Video Demo 
-7. Documentation on SQL 
+2. Finish html 
+3. Test cases 
+4. Documentation on code (Mario) 
+5. Video Demo 
