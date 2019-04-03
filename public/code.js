@@ -3,11 +3,16 @@
 const express = require("express")
 const app = express()
 const port = 8080;
-const mysql = require('mysql')
+const mysql = require('mysql2')
 const config = require('./config.js')
-const con = mysql.createConnection(config.mysql)
+const db = mysql.createConnection(config.mysql)
 
 app.use(express.static("images"))
 app.use(express.static("webpages"))
 
 app.listen(port, () => console.log("server is listening"))
+
+db.connect(function(err) {
+  if (err) throw err;
+  console.log("Database Connected")
+});

@@ -6,21 +6,6 @@
     <link rel="stylesheet" href="default.css">
     <title>BakeAway</title>
     <link rel="shortcut icon" href="bakeawayLogo2.png" />
-    <script>
-    function searchBakery() {
-      var input = document.getElementById('myinput');
-      var filter = input.value.toLowerCase();
-      var nodes = document.getElementsByClassName('child');
-
-      for (i=0; i< nodes.length; i++){
-        if (nodes[i].innerText.toLowerCase().includes(filter)) {
-          nodes[i].style.display = "";
-        } else {
-          nodes[i].style.display = "none";
-        }
-      }
-    }
-  </script>
 </head>
 <body>
 
@@ -126,6 +111,21 @@
     Heidi's Patisserie
   </div>
 </div>
-
 </body>
 </html>
+
+<script>
+function searchBakery() {
+  let input = document.getElementById('myinput');
+  let filter = input.value.toLowerCase();
+  let nodes = document.getElementsByClassName('child');
+
+  for (i=0; i< nodes.length; i++){
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+</script>
