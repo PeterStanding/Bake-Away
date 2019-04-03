@@ -1,5 +1,12 @@
+-- 
+This creates the database 
+-- 
 CREATE DATABASE BakeAway;
 
+-- 
+This creates the Table Bakery 
+The primary key is the Bakery_ID, as it holds a unique value. 
+-- 
 CREATE TABLE Bakery (
 Bakery_ID int primary key,
 Name VARCHAR(20),
@@ -11,6 +18,11 @@ Telephone_Num VARCHAR(11),
 Email VARCHAR(40)
 );
 
+-- 
+This creates the table Menu_Items 
+The foreign key is the Bakery_ID as it links the items to what bakery sells them. 
+It is beneficial to the users to know which bakery to order from.
+-- 
 CREATE TABLE Menu_Items (
 Product_ID int primary key,
 Product_Name VARCHAR(20),
@@ -20,6 +32,10 @@ Bakery_ID int,
 FOREIGN KEY (Bakery_ID) REFERENCES Bakery(Bakery_ID)
 );
 
+-- 
+This creates the table Order_Details.
+The table is used to summarise what the user has ordered.
+--
 CREATE TABLE Order_Details (
 OrderDetails_ID int primary key,
 Price VARCHAR(20),
@@ -29,6 +45,11 @@ Product_ID int,
 FOREIGN KEY (Product_ID) REFERENCES Menu_Items(Product_ID)
 );
 
+-- 
+This creates the table Order_Line, it is named so as Mysql has a predefined function 'order',
+therefore resulting in an error when attempting to create an order table.
+The Foreign Key is the Customer_ID, as it links the order to a customer.
+--
 CREATE TABLE Order_Line (
 OrderLine_ID int primary key,
 OrderLine_Date DATE,
@@ -71,6 +92,10 @@ Postcode VARCHAR(8),
 Mobile_Number CHAR(11)
 );
 
+--
+This creates the Login table.
+The foreign key is the Customer_ID, as the login will be unique to a customer. 
+--
 CREATE TABLE Login (
 Username VARCHAR(20) primary key,
 Password VARCHAR(20),
