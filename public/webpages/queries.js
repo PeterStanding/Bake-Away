@@ -1,7 +1,6 @@
 'use strict'
 //Login function
 let success = [];
-let newRecord = "";
 
 async function test(){
   console.log("Testing Functions")
@@ -9,7 +8,6 @@ async function test(){
 
 //Function to Handle the login request for the login section within the system
 async function loginRequest() {
-  console.log("Test")
   let input = document.getElementById('myUsername').value;
   let resp = await fetch("/login")
   let userList = await resp.json();
@@ -28,14 +26,14 @@ async function passwordRequest() {
   passList.includes(password)? success.push(true) : success.push(false)
 
   if (success[0] == success[1] && success[0] == true) {
-    console.log("Signed In")
+    window.alert('Success Full Login');
   } else {
-    console.log("Failed Attempt")
+    window.confirm("Failed Attempt, Please Try Again")
   }
 }
 
 //Function to create a new record in the BakeAway Database
-export async function newRecord() {
+async function newRecord() {
   let user  = document.getElementById('newUser').value;
   let email  = document.getElementById('newEmail').value;
   let password  = document.getElementById('newPass').value;
