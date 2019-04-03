@@ -1,10 +1,11 @@
 >>> start_chrome()
-<selenium.webdriver.chrome.webdriver.WebDriver (session="4eae0622cceb238df8339a34a1a18a66")>
+<selenium.webdriver.chrome.webdriver.WebDriver (session="557deb875d5b0f89556090a78e0d9a25")>
 >>> go_to("file:///D:/inse/Bake-Away/public/login.html")
 >>> click("Login/Register")
-LookupError
 >>> write("Username", into("Enter Username"));
 >>>>write("password", into("Enter Password"));
+>>>>click("Log In");
+>>>>Look up error
 >>>>write("123password", into("Renter Password"));
 >>>>click("Log In");
 >>> kill_browser()
