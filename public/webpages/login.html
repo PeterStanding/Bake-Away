@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="default.css">
     <title>BakeAway</title>
     <link rel="shortcut icon" href="bakeawayLogo2.png" />
+    <script src="./queries.js"></script>
 </head>
 <body>
 
@@ -31,13 +32,14 @@
       <h1>Login Here</h1>
       <form>
           <p>Username</p>
-          <input type="text" name="" placeholder="Enter Username">
+          <input type="text" name=""  id = "myUsername" placeholder="Enter Username">
           <p>Password</p>
-          <input type="password" name="" placeholder="Enter Password">
-          <input type="submit" name="" value="Login">
+          <input type="password" name="" id ="myPass" placeholder="Enter Password">
+          <input type="submit" name="" onclick="loginRequest(); passwordRequest();"value="Login">
           <a href="#">Lost your password?</a><br>
           <a href="register.html">Don't have an account?</a>
       </form>
+      <button type="submit" onclick="test()">Submit</button>
 
   </div>
 
