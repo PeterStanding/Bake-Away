@@ -1,0 +1,10 @@
+>>> start_chrome()
+<selenium.webdriver.chrome.webdriver.WebDriver (session="9fb039e58ed56c18e0ef66075f9b5a46")>
+>>>go_to("file:///D:/inse/Bake-Away/public/login.html")
+>>> click("Bakeries")
+>>> scroll_down()
+>>> click("Greggs")
+>>> click("Yum Yum")
+>>> click("Add")
+>>> click("Checkout")
+>>>>click("Pay")
