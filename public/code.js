@@ -51,9 +51,43 @@ async function passwordRequest(req,res) {
   })
 }
 
-//Query for creating a new Database Record
-async function insertRecord() {
-  db.query('INSERT INTO LOGIN VALUES' , function(err) {
+async function setCustID() {
+  db.query('SELECT * FROM Customer', function(err, row, fields) {
+    let custList = [];
+    let again = true;
     if (err) throw err;
+    for (var i in row){
+      custList.push(row[i].Customer_ID);
+    }
+    while (again) {
+      let min = 10000;
+      let max = 99999;
+      let randomID = (Math.floor(Math.random() * (+max - +min)) + +min);
+      if (custList.includes(randomID)){
+
+      } else {
+        custList.push(randomID);
+        return randomID;
+        again = false;
+      }
+    }
   })
+}
+
+//Query for creating a new Database Record
+// Can Randomly Genetate number for the Customer_ID
+// Need to Insert into the customer table as well with ID & Email
+// rest of info can be updates later on.
+async function insertRecord() {
+  let newID = setCustID();
+//  let email = getEmail
+  console.log(newID);
+  //insert newID and email
+  db.query('INSERT INTO CUSTOMER VALUES', function(err) {
+  if (err) throw err;
+  })
+//insert the username, password and the newID
+   db.query('INSERT INTO LOGIN VALUES' , function(err) {
+     if (err) throw err;
+   })
 }
