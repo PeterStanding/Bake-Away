@@ -17,8 +17,12 @@ app.get('/password', passwordRequest)
 // For the Registation Page Functions
 app.get('/newRecord', insertRecord)
 
+// For the search item Function
+app.get('/items', searchItems)
+
 app.listen(port, () => console.log("server is listening"))
 
+// Database connection code
 db.connect(function(err) {
   if (err) throw err;
   console.log("Database Connected")
@@ -55,5 +59,19 @@ async function passwordRequest(req,res) {
 async function insertRecord() {
   db.query('INSERT INTO LOGIN VALUES' , function(err) {
     if (err) throw err;
+  })
+}
+
+// Query for searching for an items
+async function searchItems(req, res) {
+  db.query('SELECT * FROM Menu_Items', function(err, row, fields) {
+    let items = [];
+    if (err) throw err
+    for (var i in row){
+        items.push(row[i].Menu_Items);
+      console.log(row[i].Menu_Items);
+    }
+    console.log(items)
+    res.send(items)
   })
 }

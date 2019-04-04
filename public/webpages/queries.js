@@ -2,6 +2,9 @@
 //Login function
 let success = [];
 
+// Global item search variables
+let itemSuccess = false;
+
 async function test(){
   console.log("Testing Functions")
 }
@@ -44,4 +47,13 @@ async function newRecord() {
   } else {
     console.log("Invalid Input, Passwords are Incorrect");
   }
+}
+
+async function searchItems() {
+  let input = document.getElementById('myinput').value;
+  let resp = await fetch("/searchItems")
+  let itemsList = await resp.json();
+  console.log(itemsList)
+  console.log(input)
+  itemsList.includes(input)? itemSuccess.push(true) : itemSuccess.push(false)
 }
