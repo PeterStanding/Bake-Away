@@ -27,6 +27,7 @@ Steps for Uploading and Downloading Repository from GitHub
 ---------------------------
 Steps for running the database 
 ---------------------------
+1. Download MariaDB Server for own machine from: https://go.mariadb.com/search-download-MariaDB-server.html?utm_source=google&utm_medium=ppc&utm_campaign=MKG-Search-Google-Branded-DL-EMEA-bd&gclid=EAIaIQobChMIqZj95pG34QIVxqSaCh3jkw9BEAAYASAAEgKAe_D_BwE
 
 
 
