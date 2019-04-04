@@ -34,12 +34,6 @@ Steps for running the database
 5. The database has now been created on your machine. 
 
 
-
-
-
-
-
-
 --------------------------
 Installing our application
 --------------------------
