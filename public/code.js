@@ -15,7 +15,9 @@ app.get('/login', loginRequest)
 app.get('/password', passwordRequest)
 
 // For the Registation Page Functions
-app.get('/newRecord', insertRecord)
+app.get('/insert', insertRecord)
+app.post('/insert', insertRecord)
+app.get('/test', setID)
 
 app.listen(port, () => console.log("server is listening"))
 
@@ -51,7 +53,7 @@ async function passwordRequest(req,res) {
   })
 }
 
-async function setCustID() {
+async function setID() {
   db.query('SELECT * FROM Customer', function(err, row, fields) {
     let custList = [];
     let again = true;
@@ -64,9 +66,11 @@ async function setCustID() {
       let max = 99999;
       let randomID = (Math.floor(Math.random() * (+max - +min)) + +min);
       if (custList.includes(randomID)){
-
+        console.log("ID Already in Use")
+        return randomID;
       } else {
         custList.push(randomID);
+        //console.log(randomID);
         return randomID;
         again = false;
       }
@@ -74,20 +78,27 @@ async function setCustID() {
   })
 }
 
+async function testReturn(a, b){
+  return a * b;
+}
 //Query for creating a new Database Record
 // Can Randomly Genetate number for the Customer_ID
 // Need to Insert into the customer table as well with ID & Email
 // rest of info can be updates later on.
-async function insertRecord() {
-  let newID = setCustID();
+async function insertRecord(req, res) {
+  let newID = setID();
+  let username = "username";
+  let password = "password";
+  let email = "email";
 //  let email = getEmail
   console.log(newID);
+  console.log(username, password, email);
   //insert newID and email
-  db.query('INSERT INTO CUSTOMER VALUES', function(err) {
-  if (err) throw err;
-  })
-//insert the username, password and the newID
-   db.query('INSERT INTO LOGIN VALUES' , function(err) {
-     if (err) throw err;
-   })
+//   db.query('INSERT INTO CUSTOMER VALUES', function(err) {
+//   if (err) throw err;
+//   })
+// //insert the username, password and the newID
+//    db.query('INSERT INTO LOGIN VALUES' , function(err) {
+//      if (err) throw err;
+//    })
 }

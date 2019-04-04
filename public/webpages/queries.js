@@ -2,8 +2,9 @@
 //Login function
 let success = [];
 
-async function test(){
-  console.log("Testing Functions")
+async function test() {
+  let resp = await fetch('/test');
+  console.log(resp);
 }
 
 //Function to Handle the login request for the login section within the system
@@ -26,9 +27,9 @@ async function passwordRequest() {
   passList.includes(password)? success.push(true) : success.push(false)
 
   if (success[0] == success[1] && success[0] == true) {
-    window.alert('Success Full Login');
+    window.alert('Successfull Login');
   } else {
-    window.confirm("Failed Attempt, Please Try Again")
+    window.alert("Failed Attempt, Please Try Again")
   }
 }
 
@@ -38,10 +39,16 @@ async function newRecord() {
   let email  = document.getElementById('newEmail').value;
   let password  = document.getElementById('newPass').value;
   let retype = document.getElementById('renter').value;
+  console.log(password);
 
-  if (retype == password) {
-    console.log(user, password);
+  if (retype == password && password !== null ) {
+    //console.log(user, password, email);
+    await fetch('/insert', {
+      method: 'POST',
+      body: user, password, email,
+    });
+    //insertRecord(user,password,email);
   } else {
-    console.log("Invalid Input, Passwords are Incorrect");
+    window.alert("Invalid Input, Passwords are Incorrect");
   }
 }
