@@ -1,11 +1,11 @@
 >>> start_chrome()
 <selenium.webdriver.chrome.webdriver.WebDriver (session="474822d89d01c73b33ea47724e17d0c1")>
 >>> go_to("http://localhost:8081/login.html?")
->>> write("841221",into="Username")
->>> write("dhgfdsfbh",into="Password")
->>> click("login")
->>> Alert().dismiss()
->>> write("Username", into("Enter Username"));
->>>>write("123password", into("Renter Password"));
+>>> write("841221",into="Username");
+>>> write("dhgfdsfbh",into="Password");
+>>> click("login");
+>>> Alert().dismiss();
+>>>  write("841221",into="Username");
+>>> write("C4tih21",into="Password");
 >>>>click("Log In");
 
