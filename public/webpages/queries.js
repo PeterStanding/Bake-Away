@@ -2,9 +2,11 @@
 //Login function
 let success = [];
 
-async function test() {
-  let resp = await fetch('/test');
-  console.log(resp);
+// Global item search variables
+let itemSuccess = false;
+
+async function test(){
+  console.log("Testing Functions")
 }
 
 //Function to Handle the login request for the login section within the system
@@ -51,4 +53,13 @@ async function newRecord() {
   } else {
     window.alert("Invalid Input, Passwords are Incorrect");
   }
+}
+
+async function searchItems() {
+  let input = document.getElementById('myinput').value;
+  let resp = await fetch("/searchItems")
+  let itemsList = await resp.json();
+  console.log(itemsList)
+  console.log(input)
+  itemsList.includes(input)? itemSuccess.push(true) : itemSuccess.push(false)
 }

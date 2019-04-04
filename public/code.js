@@ -19,8 +19,12 @@ app.get('/insert', insertRecord)
 app.post('/insert', insertRecord)
 app.get('/test', setID)
 
+// For the search item Function
+app.get('/items', searchItems)
+
 app.listen(port, () => console.log("server is listening"))
 
+// Database connection code
 db.connect(function(err) {
   if (err) throw err;
   console.log("Database Connected")
@@ -101,4 +105,18 @@ async function insertRecord(req, res) {
 //    db.query('INSERT INTO LOGIN VALUES' , function(err) {
 //      if (err) throw err;
 //    })
+}
+
+// Query for searching for an items
+async function searchItems(req, res) {
+  db.query('SELECT * FROM Menu_Items', function(err, row, fields) {
+    let items = [];
+    if (err) throw err
+    for (var i in row){
+        items.push(row[i].Menu_Items);
+      console.log(row[i].Menu_Items);
+    }
+    console.log(items)
+    res.send(items)
+  })
 }

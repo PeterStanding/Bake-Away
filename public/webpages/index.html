@@ -17,7 +17,7 @@
       <input type="checkbox" id="toggle_1">
 
       <ul>
-          <li><input type="text" id="myinput" onkeyup="searchBakery()" placeholder="Search" class="search"></li>
+          <li><input type="text" id="myinput" onkeyup="searchBakery(); searchItems();" placeholder="Search" class="search"></li>
           <li><a href="index.html"     title="Home" accesskey="i">               Bakeries</a></li>
           <li><a href="basket.html"    title="Basket" accesskey="b">               Basket</a></li>
           <li><a href="login.html"    title="Login / Register" accesskey="l">              Login / Register</a></li>
@@ -74,42 +74,72 @@
 <div class="parent">
   <div class="child">
      Greggs
+     <div class="items">
+       YumYum
+     </div>
   </div>
 
   <div class="child">
      Bread Addiction
+     <div class="items">
+       Chocolate Cake
+     </div>
   </div>
 
   <div class="child">
     Patisserie Valerie
+    <div class="items">
+      Apple pie
+    </div>
   </div>
 
   <div class="child">
     Sweet Cakes
+    <div class="items">
+      Tottenham Cake
+    </div>
   </div>
 
   <div class="child">
     Capital Cake
+    <div class="items">
+      Cinnamon Bun
+    </div>
  </div>
 
   <div class="child">
     Cupcake Treasure
+    <div class="items">
+      Brownie
+    </div>
  </div>
 
   <div class="child">
     Fondantly Yours
+    <div class="items">
+      Pink Jammie
+    </div>
   </div>
 
   <div class="child">
     Cakes O'Licious
+    <div class="items">
+      Muffin
+    </div>
   </div>
 
   <div class="child">
     Commercial Bakery
+    <div class="items">
+      Ginger bread man
+    </div>
   </div>
 
   <div class="child">
     Heidi's Patisserie
+    <div class="items">
+      Belgian bun
+    </div>
   </div>
 </div>
 </body>
@@ -120,6 +150,22 @@ function searchBakery() {
   let input = document.getElementById('myinput');
   let filter = input.value.toLowerCase();
   let nodes = document.getElementsByClassName('child');
+
+  for (i=0; i< nodes.length; i++){
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<script>
+function searchItem() {
+  let input = document.getElementById('myinput');
+  let filter = input.value.toLowerCase();
+  let nodes = document.getElementsByClassName('item');
 
   for (i=0; i< nodes.length; i++){
     if (nodes[i].innerText.toLowerCase().includes(filter)) {
