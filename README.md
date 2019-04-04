@@ -24,13 +24,14 @@ Steps for Uploading and Downloading Repository from GitHub
 4. Notify group once upload is completed
 
 
----------------------------
+-------------------------------
 Steps for running the database 
----------------------------
-
-
-
-
+-------------------------------
+1. Download MariaDB Server for own machine from: https://go.mariadb.com/search-download-MariaDB-server.html?utm_source=google&utm_medium=ppc&utm_campaign=MKG-Search-Google-Branded-DL-EMEA-bd&gclid=EAIaIQobChMIqZj95pG34QIVxqSaCh3jkw9BEAAYASAAEgKAe_D_BwE
+2. The passowrd is: bakeawaypass, or can be found in the config file.
+3. Create the 'BakeAway' Database. Then download the SQL from github. This can be found in the SQL folder under the name 'SQL- BakeAway'. ** Remove statement CREATE DATABASE BakeAway**. 
+4. Populate the database by using the insert statements, these can be found in the SQL folder under the name ' Insert Statements'.
+5. The database has now been created on your machine. 
 
 
 --------------------------
