@@ -64,3 +64,37 @@ async function searchItems() {
   console.log(input)
   itemsList.includes(input)? itemSuccess.push(true) : itemSuccess.push(false)
 }
+
+let basketList = []
+async function addUp(id){
+  // let resp = await fetch("/addBasket")
+  // let basketList = await resp.json()
+
+  if (basketList.includes(id)){
+    basketList.splice(basketList.indexOf(id), 1);
+    console.log("Delete from array")
+  }else{
+  basketList.push(id)
+  console.log("Add to array")
+}
+  console.log(basketList)
+
+  // for (let i of basketList){
+  //       let bigL = document.getElementById("item")
+  //       let li = document.createElement("li")
+  //       li.appendChild(document.createTextNode("Four"))
+  //       bigL.appendChild(li)
+  //     }
+};
+
+
+// async function showBasket(){
+//     console.log(basketList)
+//     for (let i of basketList){
+//       let bigL = document.getElementById("item")
+//       console.log(bigL)
+//       let li = document.createElement("li")
+//       li.appendChild(document.createTextNode("Four"))
+//       bigL.appendChild(li)
+//     }
+//   }
