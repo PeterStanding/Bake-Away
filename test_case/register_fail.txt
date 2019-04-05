@@ -1,6 +1,6 @@
 >>> start_chrome()
 <selenium.webdriver.chrome.webdriver.WebDriver (session="4eae0622cceb238df8339a34a1a18a66")>
->>> go_to("localhost:8080/login.html")
+>>> go_to("localhost:8080/register.html")
 >>> click("Login/Register")
 LookupError
 >>> click("Login / Register")
