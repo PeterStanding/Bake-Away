@@ -23,34 +23,25 @@ Steps for Uploading and Downloading Repository from GitHub
 3. If upload causes bugs or compromises the integrity of the repostory - Fix own code as soon as possible - Then reupload to the repository
 4. Notify group once upload is completed
 
-
 -------------------------------
 Steps for running the database 
 -------------------------------
 1. Download MariaDB Server for own machine from: https://go.mariadb.com/search-download-MariaDB-server.html?utm_source=google&utm_medium=ppc&utm_campaign=MKG-Search-Google-Branded-DL-EMEA-bd&gclid=EAIaIQobChMIqZj95pG34QIVxqSaCh3jkw9BEAAYASAAEgKAe_D_BwE
-2. The passowrd is: bakeawaypass, or can be found in the config file.
+2. The password is: bakeawaypass, or can be found in the config file.
 3. Create the 'BakeAway' Database. By using the command CREATE DATABASE BakeAway;
 4. Then download the SQL from github. This can be found in the SQL folder under the name 'SQL- BakeAway'. ** Remove statement CREATE DATABASE BakeAway**. 
 5. Populate the database by using the insert statements, these can be found in the SQL folder under the name ' Insert Statements'.
 6. The database has now been created on your machine. 
-
 
 --------------------------
 Installing our application
 --------------------------
 1. To run the server part of the application, you need to use node.js
 2. Please install node and gitbash if you don't already have it
-3. Go on the public folder called Bake-Away, right click and run with gitbash
-4. On the gitbash screen, type "npm install" to install all of the packages used, this should download all the node modules needed
+3. Go on the public folder in Bake-Away, right click and run with gitbash
+4. On the gitbash screen, type "npm install" and "npm install mysql2" to install all of the packages used, this should download all the node modules needed
 5. Then type "npm start" to start the server
 6. "Server is listening" and "Database connected" should appear to show these aspects of our system are working
 7. Now go to your preferred web browser (Chrome is recommended) and type "localhost:8080"
 
 8. IF THE SERVER NEEDS REBOOTING: type control + c into gitbash to stop the server running, then type "npm start" to restart the server
-
-------
-TO DO: 
-------
-3. Test cases 
-4. Documentation on code (Mario) 
-5. Video Demo 
