@@ -1,5 +1,5 @@
 >>> start_chrome()
 <selenium.webdriver.chrome.webdriver.WebDriver (session="190d8d57c76a5eef486eab708f9a0fa3")>
->>> go_to("file:///D:/inse/Bake-Away/public/index.html")
+>>> go_to("localhost:8080")
 >>> write("Sausage Roll", into="Search")
 >>> press(ENTER)
