@@ -6,6 +6,7 @@ const port = 8080;
 const mysql = require('mysql2')
 const config = require('./config.js')
 const db = mysql.createConnection(config.mysql)
+const fs = require('fs')
 
 app.use(express.static("images"))
 app.use(express.static("webpages"))
@@ -15,9 +16,11 @@ app.get('/login', loginRequest)
 app.get('/password', passwordRequest)
 
 // For the Registation Page Functions
+app.get('/input', insertRecord)
+app.post('/insert',insertRecord)
 app.get('/insert', insertRecord)
-app.post('/insert', insertRecord)
-app.get('/test', setID)
+//Used for testing server functions
+//app.get('/test', testReturn)
 
 // For the search item Function
 app.get('/items', searchItems)
@@ -57,55 +60,64 @@ async function passwordRequest(req,res) {
   })
 }
 
-async function setID() {
+
+
+function newCustID(req, res) {
+  let randomID = 0;
+  let custList = [];
   db.query('SELECT * FROM Customer', function(err, row, fields) {
-    let custList = [];
-    let again = true;
     if (err) throw err;
     for (var i in row){
       custList.push(row[i].Customer_ID);
     }
+    })
+    let again = true;
     while (again) {
       let min = 10000;
       let max = 99999;
-      let randomID = (Math.floor(Math.random() * (+max - +min)) + +min);
+      randomID = (Math.floor(Math.random() * (+max - +min)) + +min);
       if (custList.includes(randomID)){
         console.log("ID Already in Use")
-        return randomID;
       } else {
         custList.push(randomID);
-        //console.log(randomID);
-        return randomID;
         again = false;
       }
     }
-  })
-}
-
-async function testReturn(a, b){
-  return a * b;
+    return randomID;
 }
 //Query for creating a new Database Record
 // Can Randomly Genetate number for the Customer_ID
 // Need to Insert into the customer table as well with ID & Email
 // rest of info can be updates later on.
 async function insertRecord(req, res) {
-  let newID = setID();
-  let username = "username";
-  let password = "password";
-  let email = "email";
-//  let email = getEmail
-  console.log(newID);
-  console.log(username, password, email);
-  //insert newID and email
-//   db.query('INSERT INTO CUSTOMER VALUES', function(err) {
-//   if (err) throw err;
-//   })
-// //insert the username, password and the newID
-//    db.query('INSERT INTO LOGIN VALUES' , function(err) {
-//      if (err) throw err;
-//    })
+  let id = newCustID();
+  let userRec = "userName";
+  let passRec = "passTest";
+  let emailRec = "UserEmail";
+  let date = "0000-00-00"
+  //console.log(test);
+  //console.log(userRec, passRec, emailRec);
+  customerInsert();
+  loginInsert();
 }
+
+function customerInsert(){
+  var sql = ('INSERT INTO CUSTOMER Values ("11111","Title","fName","lName","0000-00-00","Addr1","City","PostCode","County","TeleNum","Mobile","emailTest")')
+  db.query(sql, function(err, result) {
+  if (err) throw err;
+  console.log("Table Updated");
+  })
+//insert the username, password and the newID
+}
+
+function loginInsert(){
+   var sql = ('INSERT INTO LOGIN Values ("userName", "passTest", "11111")')
+   db.query(sql, function(err, result) {
+   if (err) throw err;
+   console.log("Table Updated")
+   })
+}
+
 
 // Query for searching for an items
 async function searchItems(req, res) {

@@ -5,8 +5,9 @@ let success = [];
 // Global item search variables
 let itemSuccess = false;
 
+// Function to be used to test other function in the code.js file
 async function test(){
-  console.log("Testing Functions")
+  let rep = await fetch('/input');
 }
 
 //Function to Handle the login request for the login section within the system
@@ -41,13 +42,13 @@ async function newRecord() {
   let email  = document.getElementById('newEmail').value;
   let password  = document.getElementById('newPass').value;
   let retype = document.getElementById('renter').value;
-  console.log(password);
-
-  if (retype == password && password !== null ) {
-    //console.log(user, password, email);
+  let record = {username: user, password: password, email: email, rentered: retype}
+  let myJSON = JSON.stringify(record);
+  if (record.rentered == record.password && record.password != "") {
+    console.log(myJSON);
     await fetch('/insert', {
       method: 'POST',
-      body: user, password, email,
+      body: record
     });
     //insertRecord(user,password,email);
   } else {
