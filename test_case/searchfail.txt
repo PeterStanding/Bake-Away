@@ -1,0 +1,6 @@
+>>> start_chrome()
+<selenium.webdriver.chrome.webdriver.WebDriver (session="b57eb093134cfd77d65592d9c670f792")>
+>>> go_to("http://localhost:8080/index.html")
+>>> write("pizza",into="Search")
+>>> press(ENTER)
+>>> press(ENTER)
