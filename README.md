@@ -40,12 +40,13 @@ Installing our application
 --------------------------
 1. To run the server part of the application, you need to use node.js
 2. Please install node and gitbash if you don't already have it
-3. Go on the master file called Bake-Away, right click and run with gitbash
+3. Go on the public folder called Bake-Away, right click and run with gitbash
 4. On the gitbash screen, type "npm install" to install all of the packages used, this should download all the node modules needed
 5. Then type "npm start" to start the server
-6. Now go to your preferred web browser (Chrome is recommended) and type "localhost:8080"
+6. "Server is listening" and "Database connected" should appear to show these aspects of our system are working
+7. Now go to your preferred web browser (Chrome is recommended) and type "localhost:8080"
 
-7. IF THE SERVER NEEDS REBOOTING: type control + c into gitbash to stop the server running, then type "npm start" to restart the server
+8. IF THE SERVER NEEDS REBOOTING: type control + c into gitbash to stop the server running, then type "npm start" to restart the server
 
 ------
 TO DO: 
