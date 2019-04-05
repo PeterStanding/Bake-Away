@@ -1,6 +1,6 @@
 >>> start_chrome()
 <selenium.webdriver.chrome.webdriver.WebDriver (session="474822d89d01c73b33ea47724e17d0c1")>
->>> go_to("http://localhost:8080/login.html?")
+>>> go_to("http://localhost:8080/login.html")
 >>> write("841221",into="Username");
 >>> write("dhgfdsfbh",into="Password");
 >>> click("login");
