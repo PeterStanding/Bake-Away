@@ -50,8 +50,6 @@ Installing our application
 ------
 TO DO: 
 ------
-1. Server coding 
-2. Finish html 
 3. Test cases 
 4. Documentation on code (Mario) 
 5. Video Demo 
